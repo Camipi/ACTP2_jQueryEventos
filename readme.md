@@ -28,13 +28,13 @@ Si revisan el index en sus navegadores, verán que la segunda tarjeta esta abier
 Lo que se pide es que al gatillar el click dentro de la tarjeta (la clase `.card`) se haga un toggle de la clase `card--open `.
 
 
-##### 3. Like
+##### 3. Like .#####
 Dentro de cada carta hay un corazón para que uno pueda hacer like. Es necesario implementar que al hacer click en el elemento con clase `.card__like` se realice un toggle de la clase `.card__like--red`.
 
 __Tip:__ Recuerda que `.card__like` se encuentra dentro de `.card` lo tanto todos los eventos que gatilles sobre `.card__like` también se gatillarán en `.card`. Es parte de la tarea evitar que un evento se gatille en lugares no deseados.
 
 
-##### 4. Botón Seguir
+##### 4. Botón Seguir .#####
 Cada tarjeta tiene un botón que dice 'Seguir'. Lo que se pide es que cada vez que se le hace click al elemento `.card__follow-btn` se le agregue la clase `.card__follow-btn--following` y, si ya la tiene se le quite (o sea hacer un toggle de la clase).
 
 
