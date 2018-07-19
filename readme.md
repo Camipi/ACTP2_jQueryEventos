@@ -16,13 +16,13 @@ Cada ejercicio viene con su archivo, el cual contiene información relevante par
 
 ## Ejercicios a desarrollar
 
-##### 1. Precalentamiento.
+##### 1. Precalentamiento.##### 
 El archivo `index.html` tiene todo el código HTML y el CSS ya desarrollados. Lo que se busca es que uds agreguen todo lo relacionado con la interacción, o sea el código jQuery. Para eso es necesario no solo agregar la referencia a la librería (que la pueden encontrar en:`assets/js/lib/jquery-3.3.1.min.js `), si no que también la referencia a un archivos JS externo.
 
 Ese archivo externo de JS se debe encontrar en la carpeta `assets/js` y el objetivo es que, como tendrán que escribir un código largo de JS, se realice en otro archivo para que sea más ordenado. Es importante que lo primero que hagan en ese archivo sea agregar el [Document Ready](https://es.stackoverflow.com/q/92628) de jQuery 3, para que su código solo se ejecute cuando el DOM haya sido cargado.
 
 
-##### 2. Apertura de la tarjeta
+##### 2. Apertura de la tarjeta. #####
 Si revisan el index en sus navegadores, verán que la segunda tarjeta esta abierta y que las otras dos se encuentran cerradas. Por otro lado, si revisamos el código HTML veremos que la tarjeta abierta tiene la clase `card--open`.
 
 Lo que se pide es que al gatillar el click dentro de la tarjeta (la clase `.card`) se haga un toggle de la clase `card--open `.
