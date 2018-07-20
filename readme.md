@@ -38,7 +38,7 @@ __Tip:__ Recuerda que `.card__like` se encuentra dentro de `.card` lo tanto todo
 Cada tarjeta tiene un botón que dice 'Seguir'. Lo que se pide es que cada vez que se le hace click al elemento `.card__follow-btn` se le agregue la clase `.card__follow-btn--following` y, si ya la tiene se le quite (o sea hacer un toggle de la clase).
 
 
-##### 5. Agregar imagen seleccionada 
+##### 5. Agregar imagen seleccionada .#####
 Al final de la página hay un formulario donde se pueden agregar dinámicamente nuevas tarjetas. Poco a poco iremos agregando la programación para que funcione, sin embargo por ahora cuando uno hace un cambio en la opción: 'Seleccione una imagen', se debería desplegar dentro del div con clase `.create__image` la imagen que seleccionada en el select (y que hace referencia al value del option). Para realizar eso ya hemos agregado el tag de la imagen y lo que deberemos hacer es cambiar el src de aquella etiqueta.
 
 Deberemos escuchar el evento que se gatille con el cambio del select y posteriormente capturar el value del select y concatenarlo con la ruta para llegar a las imágenes (`assets/images/squared/`)
@@ -48,7 +48,7 @@ Se recomienda revisar la información que se encuentra en la documentación de j
 __Tip:__ Si yo hago `$(event.target)` le estoy diciendo a jQuery que envuelva el target del evento y me lo entregue junto a todas sus funciones propias, para que sea más fácil utilizar la función `.val()` y muchas otras más.
 
 
-##### 6. Agregar perfil del autor
+##### 6. Agregar perfil del autor .#####
 El perfil del autor es similar a la imagen seleccionada, salvo que deberemos sacar la imagen original desde otra carpeta: `assets/images/profiles/`
 
 __Tip:__ La concatenación en ES5 entre dos strings se realiza por medio de signos `+`, el string 'Hola' + '10' generará la concatenación de ambos strings generando como resultado: 'Hola10'. Sin embargo en ES6 (la nueva versión de JS) existe una nueva forma de concatenar strings, se llama interpolación y se utiliza de esta forma: <code>\`Este string es un texto con una: ${ variable }\`</code>. Variable en ese string podría ser cualquier variable o también cualquier operación matemática o expresión. Es importante saber que ES6 define como string al contenido que esta envuelto entre backtips, además es bueno recalcar que la interpolación solo se realizará en un string usando <code>\`</code> (backticks) y que no funcionará si utilizamos comillas simples o dobles. También es necesario envolver la variable o la expresión entre dos llaves y con un signo de \$ al principio, porque el lenguaje necesita que separemos el texto de lo qué no lo es.
