@@ -38,7 +38,7 @@ __Tip:__ Recuerda que `.card__like` se encuentra dentro de `.card` lo tanto todo
 Cada tarjeta tiene un botón que dice 'Seguir'. Lo que se pide es que cada vez que se le hace click al elemento `.card__follow-btn` se le agregue la clase `.card__follow-btn--following` y, si ya la tiene se le quite (o sea hacer un toggle de la clase).
 
 
-##### 5. Agregar imagen seleccionada
+##### 5. Agregar imagen seleccionada 
 Al final de la página hay un formulario donde se pueden agregar dinámicamente nuevas tarjetas. Poco a poco iremos agregando la programación para que funcione, sin embargo por ahora cuando uno hace un cambio en la opción: 'Seleccione una imagen', se debería desplegar dentro del div con clase `.create__image` la imagen que seleccionada en el select (y que hace referencia al value del option). Para realizar eso ya hemos agregado el tag de la imagen y lo que deberemos hacer es cambiar el src de aquella etiqueta.
 
 Deberemos escuchar el evento que se gatille con el cambio del select y posteriormente capturar el value del select y concatenarlo con la ruta para llegar a las imágenes (`assets/images/squared/`)

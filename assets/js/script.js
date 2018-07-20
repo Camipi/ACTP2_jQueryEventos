@@ -4,12 +4,12 @@ $(function(){
 		
 		e.preventDefault();
 
-		$('.card').toggleClass('card--open');
+		$(this).toggleClass('card--open');
 	});
 
 
 	$('.card').on('click', 'a', function(event){
-		
+
 		event.preventDefault();
 		event.stopPropagation();
 
@@ -33,5 +33,21 @@ $(function(){
 
 		$(this).toggleClass('card__follow-btn--following');
 	});
+
+
+	$('.create__select').on('change', function(e){
+
+	 	var image =	$(this).val();
+
+	 	$('.create__image > img').attr('src', 'assets/images/squared/' + image);
+
+
+	});
+		
+		
+		
+
+
+
 
 });
